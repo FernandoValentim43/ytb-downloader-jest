@@ -1,4 +1,6 @@
 {
+  "type": "module",
+  
   "dependencies": {
     "jest": "^29.4.1",
     "ytdl-core": "^4.11.2"

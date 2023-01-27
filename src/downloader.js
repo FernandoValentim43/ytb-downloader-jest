@@ -1,8 +1,10 @@
-const fs = require('fs');
-const ytdl = require('ytdl-core');
+import * as fs from 'node:fs';
+
+import ytdl from 'ytdl-core';
 
 
-async function downloadAudio(url) {
+
+export async function downloadAudio(url) {
     try {
         const info = await ytdl.getInfo(url);
         const videoTitle = info.videoDetails.title;
@@ -22,4 +24,6 @@ async function downloadAudio(url) {
     }
 }
 
-downloadAudio('https://www.youtube.com/watch?v=v8xowf-HNiY ');
+
+
+
